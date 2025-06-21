@@ -11,6 +11,7 @@ on:
         
 permissions:
   packages: write
+  
 
 jobs:
   build-and-publish:
@@ -38,4 +39,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: ghcr.io/${{ github.repository_owner }}/github-action-dotnet-build:latest
+        tags: ghcr.io/${{ github.repository_owner }}/prometheus-monitoring-hello:latest
